@@ -7,3 +7,17 @@ def in1to10(num, outside_mode)
     puts "False"
   end
 end
+
+# ーーーーーーーーー
+
+# 正の整数を入力し、その整数が、10の倍数（10,20,30...）からの差が2以内であるときはTrue、それ以外はFalseと出力するメソッド
+def near_ten(num)
+  # 変数quotientに一の位の値を代入
+  quotient = num % 10
+  # 「0,1,2,8,9」のどれかに当てはまるかどうかを確認
+  if quotient <= 2 || quotient >= 8
+    puts "True"
+  else
+    puts "False"
+  end
+end
